@@ -412,7 +412,8 @@ function saveSale(){
   const paidInput=parseFloat(document.getElementById('paid').value);
   const paymentMode=document.getElementById('salePaymentMode').value;
   let customerId=null;
-  let customerName='Walk-in Customer';
+let customerName='Walk-in Customer';
+let advanceUsed=0;
 
   if(!item || !Number.isFinite(total) || total<0){
     alert('Please enter a valid item and total amount.');
